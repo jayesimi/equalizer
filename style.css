@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    width: 100%;
+}
+
+main{
+    background-image: url(./bg-main-desktop.png);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-repeat: no-repeat;
+}
+
+main aside:nth-child(1){
+    width: 80%;
+    padding: 5vw 10vw;
+}
+
+main aside:nth-child(2){
+    width: 20%;
+}
+
+main aside:nth-child(1) img{
+    width: 30vw;
+}
+
+aside:nth-child(1) figure{
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+aside:nth-child(1) figure h1{
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 76px;
+    color: rgb(25, 24, 38 );
+}
+
+
+aside:nth-child(1) figure p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: rgb(25, 24, 38 );
+}
+
+section {
+    background: rgb(25, 24, 38 );
+    height: 80vh;
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 0 1rem;
+    position: relative;
+    justify-content: center;
+    
+}
+
+section .mobile {
+    width: 23vw;
+    height: 120%;
+    
+    transform: translateY(-8rem);
+}
+
+section div:nth-child(2){
+    width: 25%;
+}
+
+section div:nth-child(3){
+    background-color: rgb(250, 115, 82);
+    width: 35%;
+    border-radius: 20px;
+    padding: 1.7vw;
+    
+
+    
+}
+
+section div:nth-child(3) .card-head{
+    width: 100% !important;
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section div:nth-child(4) .card-head h1{
+   font-size: 40px;
+   font-weight: 700;
+
+}
+
+section div:nth-child(4) .card-head p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+
+}
+
+.card-head div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.card-head div h1 {
+  font-size: 65px;
+  font-weight: 700;
+
+}
+
+.card-head div p {
+font-size:20px ;
+font-weight: 400;
+}
+
+.card-body {
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-body button {
+   border: none;
+   padding: 1rem o;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive design */
+@media  (max-width:1000px){
+    aside:nth-child(1) figure h1{
+        font-size:55px;
+        line-height: 55px;
+        text-align:center;
+    
+    
+
+}
+
+main aside:nth-child(1) img {
+    width: 30vw;
+}
+
+section{
+    flex-direction: row;
+    height: fit-content;
+    align-items: center;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+section div:not(2){
+    display: none;
+}
+
+section .mobile .card{
+    transform: none;
+    width: 35vw;
+
+}
+
+main{
+    height: fit-content;
+}
+
+}
+
+@media (max-width:700px) {
+   section{
+    transform: none;
+    justify-content: center;
+    padding: 2rem 0;
+    width: 100%;
+   } 
+
+   section .mobile .card{
+    transform: none;
+    width: 80%;
+   }
+
+   footer{
+    flex-direction: column;
+   }
+
+}
+
+@media (max-width:650px) {
+    main aside:nth-child(1){
+        width:100%;
+        padding: 5vw 10vw;
+    }
+    main aside:nth-child(2){
+        width: 20%;
+        display: none;
+    }
+
+    main aside:nth-child(1) figure p{
+        font-size: 18px;
+        line-height: 20px;
+        text-align: justify;
+    } 
+    footer{
+        flex-direction: column;
+    }
+    
+}
+
+footer{
+    /* background: rgba(220, 220, 220, 0.685); */
+
+    padding:5vw 10vw ;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+
+}
+
+footer img{
+    width: 10vw;
+}
+
+footer div{
+    font-size: 25px;
+    gap: 3rem;
+}
+
+
+
+
+
+
+
+
+
